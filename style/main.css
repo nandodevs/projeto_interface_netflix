@@ -1,0 +1,53 @@
+/*Resets CSS - Adiciona a cor padrão do projeto*/
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/* Comando que adapta a página para qualquer tipo de browser */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    
+}
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: Arial Black;
+    font-size: 40px;
+}
+
+/*Definindo as cores e estilo dos botões de navegação*/
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+/*Mudar cor ao passar o mouse*/
+header nav a:hover{
+    color: #fff;
+}
+
+/*Filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)80%) ,url("/img/capa-bleach.jpg");
+    height: 400px;
+    background-size: cover;
+}
